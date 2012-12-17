@@ -3,10 +3,6 @@ ArduinoFX-server
 
 Embedded Server side for ArduinoFX project
 
-Please, read full description here:
-
-http://jperedadnr.blogspot.com.es/2012/12/arduinofx-javafx-gui-for-home.html
-
 1. Basic Hardware Setup
 
 Arduino Uno with RHT03 temperature and relative humidity sensor and a XBee antenna plugged in an Arduino shield. 
@@ -14,6 +10,10 @@ Arduino Uno with RHT03 temperature and relative humidity sensor and a XBee anten
 The measures are sent wirelessly to a second XBee antenna, plugged via a XBee Explorer to a Raspberry Pi USB port.
 
 In the Raspberry Pi, with soft-float Debian wheezy distro, we have installed Java Embedded Suite 7.0. 
+
+Please, read full description here:
+
+http://jperedadnr.blogspot.com.es/2012/12/arduinofx-javafx-gui-for-home.html
 
 2. Embedded Server
 
@@ -27,9 +27,14 @@ It will perform the following main tasks:
 
 -RESTful web services: it will respond to REST requests returning lists in json format with the data measured between two dates.
 
-These tasks are intended for a JavaFX based client.
+Please read here:
 
+http://jperedadnr.blogspot.com.es/2012/12/arduinofx-javafx-gui-for-home_17.html
 
-Please, any question or comment is really welcome.
+for full explanation on the embedded server installation. 
+
+These tasks are intended for a JavaFX based client (https://github.com/jperedadnr/ArduinoFX-client)
+
+Comments are really welcome.
 
 José Pereda - http://jperedadnr.blogspot.com.es
