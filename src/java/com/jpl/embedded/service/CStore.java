@@ -191,12 +191,13 @@ public class CStore {
      * get number of records in history table
      */
     public int count() {
+        int tam=0;
         ResultSet resultset = null;
         try{  lock(); } catch(InterruptedException ie) {}
         try {
             resultset = statement.executeQuery("SELECT count(*) FROM history");
             if (resultset!=null && resultset.next()) {
-                return resultset.getInt(1);
+                tam = resultset.getInt(1);
             }
         } catch (SQLException se) {
             se.printStackTrace();
@@ -209,7 +210,7 @@ public class CStore {
             }
         }
         unlock();
-        return 0;
+        return tam;
     }
     
     /*
